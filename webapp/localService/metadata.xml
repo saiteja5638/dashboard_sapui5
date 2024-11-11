@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+    <edmx:Reference Uri="https://sap.github.io/odata-vocabularies/vocabularies/Common.xml" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+    </edmx:Reference>
+    <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+        <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/>
+    </edmx:Reference>
+    <edmx:DataServices m:DataServiceVersion="2.0">
+        <Schema Namespace="Catalog" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+            <EntityContainer Name="EntityContainer" m:IsDefaultEntityContainer="true">
+                <EntitySet Name="MediaFile" EntityType="Catalog.MediaFile"/>
+                <EntitySet Name="tUSER" EntityType="Catalog.tUSER"/>
+                <EntitySet Name="JOBlogs" EntityType="Catalog.JOBlogs"/>
+                <EntitySet Name="E_LEARN" EntityType="Catalog.E_LEARN"/>
+                <FunctionImport Name="HiTSocket" ReturnType="Edm.String" m:HttpMethod="GET"/>
+                <FunctionImport Name="onWaiting" ReturnType="Edm.String" m:HttpMethod="GET">
+                    <Parameter Name="ID" Type="Edm.String" Mode="In" Nullable="true"/>
+                </FunctionImport>
+                <FunctionImport Name="onPost" m:HttpMethod="POST">
+                    <Parameter Name="DATA" Type="Edm.String" Mode="In" Nullable="true"/>
+                </FunctionImport>
+            </EntityContainer>
+            <EntityType Name="MediaFile" m:HasStream="true">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="mediaType" Type="Edm.String"/>
+            </EntityType>
+            <EntityType Name="tUSER">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.Guid" Nullable="false"/>
+                <Property Name="USER_NAME" Type="Edm.String" MaxLength="10"/>
+            </EntityType>
+            <EntityType Name="JOBlogs">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" Nullable="false"/>
+                <Property Name="JOB_NAME" Type="Edm.String"/>
+                <Property Name="STATUS" Type="Edm.String"/>
+            </EntityType>
+            <EntityType Name="E_LEARN">
+                <Key>
+                    <PropertyRef Name="ID"/>
+                </Key>
+                <Property Name="ID" Type="Edm.String" MaxLength="10" Nullable="false"/>
+                <Property Name="DATA" Type="Edm.String"/>
+            </EntityType>
+            <Annotations Target="Catalog.MediaFile" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Core.MediaType" Path="mediaType"/>
+            </Annotations>
+            <Annotations Target="Catalog.MediaFile/mediaType" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+                <Annotation Term="Core.IsMediaType" Bool="true"/>
+            </Annotations>
+        </Schema>
+    </edmx:DataServices>
+</edmx:Edmx>
