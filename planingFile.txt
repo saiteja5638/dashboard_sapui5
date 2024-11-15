@@ -1,0 +1,8 @@
+
+Table Fields
+Week
+ConceptName
+Duration
+Assesment Rating
+Assesment Status
+Concept Status

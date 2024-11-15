@@ -1,1 +1,60 @@
-/* Enter your custom styles here */
+div#container-dashboard---View1--_IDGenFlexBox {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 80px; */
+}
+div#container-dashboard---View1--_IDGenVBox {
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-wrap: wrap; */
+    align-items: flex-end;
+    height: 300px;
+}
+
+div#container-dashboard---View1--idpiechart {
+    width: 400px !important;
+    height: 300px !important;
+}
+.sapSuiteUiCommonsChartContainerToolBarArea {
+    display: none;
+}
+div#container-dashboard---View1--_IDGedwnVBox1 {
+    position: relative;
+    /* left: -100px; */
+    right: 50px;
+}
+div#container-dashboard---View1--_IDGenPanel1 {
+    height: 420px !important;
+}
+div#container-dashboard---View1--_IDGenPanel1 {
+    padding: 10px;
+}
+
+div#container-dashboard---View1--_IDGenPanel2 {
+    padding: 10px;
+}
+
+div#container-dashboard---View1--idpieceeeeehart {
+    width: 400px !important;
+    height: 300px !important;
+}
+div#container-dashboard---View1--idpieceeeeehart4 {
+    width: 400px !important;
+    height: 300px !important;
+}
+div#container-dashboard---View1--idpieceeeeehart3 {
+    width: 400px !important;
+    height: 300px !important;
+}
+div#container-dashboard---View1--idpieceeeeehart1 {
+    width: 400px !important;
+    height: 300px !important;
+}
+div#container-dashboard---View1--_IDGenPanel2-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    gap: 20px;
+}

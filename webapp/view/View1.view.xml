@@ -1,7 +1,395 @@
-<mvc:View controllerName="dashboard.controller.View1"
-    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
-    xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content />
+<mvc:View
+    controllerName="dashboard.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+        xmlns:viz="sap.viz.ui5.controls"
+    xmlns:vizFeeds="sap.viz.ui5.controls.common.feeds"
+       xmlns:viz.data="sap.viz.ui5.data"
+    xmlns:viz.feeds="sap.viz.ui5.controls.common.feeds"
+    xmlns:chart="sap.suite.ui.commons"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+        showHeader="false"
+    >
+        <Panel id="_IDGenPanel1"
+            headerText="DashBoard Quotation"
+           
+            height="300px"
+        >
+            <FlexBox id="_IDGenFlexBox"
+                backgroundDesign="Solid"
+                class="sapUiSmallMargin"
+            >
+                <VBox id="_IDGenVBox">
+                    <HBox id="_IDGenHBox">
+                        <Label
+                            id="_IDGenLabel"
+                            text="Quotation number :"
+                        />
+                        <Text
+                            id="_IDGenText3"
+                            text="40896352222222"
+                        />
+                    </HBox>
+                    <HBox id="_IDGenHBo5x">
+                        <Label
+                            id="_IDGenLa8bel"
+                            text="Customer :"
+                        />
+                        <Text
+                            id="_IDGenText5"
+                            text="xxxxxxxxxxxx"
+                        />
+                    </HBox>
+                    <HBox id="_IDGednHBo5x">
+                        <Label
+                            id="_IDGsdenLa8bel"
+                            text="Plant :"
+                        />
+                        <Text
+                            id="_IDGenText6"
+                            text="122222222222222"
+                        />
+                    </HBox>
+                    <HBox id="_IDGedwwdnHBo5x">
+                        <Label
+                            id="_IDGsdenLwdwqda8bel"
+                            text="Sales Orgnaziation :"
+                        />
+                        <Text
+                            id="_IDGenText7"
+                            text="34eeeeeeeeeeee"
+                        />
+                    </HBox>
+                </VBox>
+                <VBox id="_IDGedwnVBox1">
+ <chart:ChartContainer id="chartContainer">
+                        <chart:ChartContainerContent
+                            id="_IDGenChartContainerContent1"
+                        >
+                            <chart:content>
+                                <viz:VizFrame
+                                    id="idpiechart"
+                                    width="auto"
+                                    uiConfig="{applicationSet:'fiori'}"
+                                    vizType="pie"
+                                    vizProperties="{
+                    plotArea:{
+                        dataLabel:{visible: true},
+                         formatString: [['0.00%']] 
+                    },
+                    title : {text:'Overall Quotation '}
+                }"
+                                >
+                                    <viz:dataset>
+                                        <viz.data:FlattenedDataset
+                                            id="flattenData"
+                                            data="{IceCreamModel>/Items}"
+                                        >
+                                            <viz.data:dimensions>
+                                                <viz.data:DimensionDefinition
+                                                    id="_IDGenDimensionDefinition1"
+                                                    name="Category"
+                                                    value="{IceCreamModel>Category}"
+                                                />
+                                            </viz.data:dimensions>
+                                            <viz.data:measures>
+                                                <viz.data:MeasureDefinition
+                                                    id="_IDGenMeasureDefinition1"
+                                                    name="Percentage"
+                                                    value="{IceCreamModel>Percentage}"
+                                                />
+                                            </viz.data:measures>
+                                        </viz.data:FlattenedDataset>
+                                    </viz:dataset>
+
+                                    <viz:feeds>
+                                        <viz.feeds:FeedItem
+                                            id="_IDGenFeedItem1"
+                                            uid="size"
+                                            type="Measure"
+                                            values="Percentage"
+                                        />
+                                        <viz.feeds:FeedItem
+                                            id="_IDGenFeedIwdwtem2"
+                                            uid="color"
+                                            type="Dimension"
+                                            values="Category"
+                                        />
+                                    </viz:feeds>
+                                </viz:VizFrame>
+                            </chart:content>
+                        </chart:ChartContainerContent>
+                    </chart:ChartContainer>
+            
+                </VBox>
+            </FlexBox>
+        </Panel>
+        <Panel id="_IDGenPanel2"
+            headerText="Quotation Item data"
+           
+        >
+        <FlexBox id="_IDGenFlexBox1" >
+        <chart:ChartContainer id="chaaaaeeeeeeiner">
+                        <chart:ChartContainerContent
+                            id="_IDGenaaaaaaaaaeeeeeeontent1"
+                        >
+                            <chart:content>
+                                <viz:VizFrame
+                                    id="idpieceeeeehart"
+                                    width="auto"
+                                    uiConfig="{applicationSet:'fiori'}"
+                                    vizType="pie"
+                                    vizProperties="{
+                    plotArea:{
+                        dataLabel:{visible: true},
+                         formatString: [['0.00%']],
+                         colorPalette: [ '#98f5eb', '#B2912F'] 
+                    },
+                    title : {text:'T Quotation'}
+                }"
+                                >
+                                    <viz:dataset>
+                                        <viz.data:FlattenedDataset
+                                            id="a"
+                                            data="{IceCreamModel>/Items}"
+                                        >
+                                            <viz.data:dimensions>
+                                                <viz.data:DimensionDefinition
+                                                    id="aeees"
+                                                    name="Category"
+                                                    value="{IceCreamModel>Category}"
+                                                />
+                                            </viz.data:dimensions>
+                                            <viz.data:measures>
+                                                <viz.data:MeasureDefinition
+                                                    id="asaa"
+                                                    name="Percentage"
+                                                    value="{IceCreamModel>Percentage}"
+                                                />
+                                            </viz.data:measures>
+                                        </viz.data:FlattenedDataset>
+                                    </viz:dataset>
+
+                                    <viz:feeds>
+                                        <viz.feeds:FeedItem
+                                            id="as"
+                                            uid="size"
+                                            type="Measure"
+                                            values="Percentage"
+                                        />
+                                        <viz.feeds:FeedItem
+                                            id="saa"
+                                            uid="color"
+                                            type="Dimension"
+                                            values="Category"
+                                        />
+                                    </viz:feeds>
+                                </viz:VizFrame>
+                            </chart:content>
+                        </chart:ChartContainerContent>
+                    </chart:ChartContainer>
+                            <chart:ChartContainer id="saasasa">
+                        <chart:ChartContainerContent
+                            id="saasa"
+                        >
+                            <chart:content>
+                                <viz:VizFrame
+                                    id="idpieceeeeehart1"
+                                    width="auto"
+                                    uiConfig="{applicationSet:'fiori'}"
+                                    vizType="pie"
+                                    vizProperties="{
+                    plotArea:{
+                        dataLabel:{visible: true},
+                         formatString: [['0.00%']] 
+                    },
+                    title : {text:'A Quotation'}
+                }"
+                                >
+                                    <viz:dataset>
+                                        <viz.data:FlattenedDataset
+                                            id="flatteneeeeeeeeeewsddeeeData"
+                                            data="{IceCreamModel>/Items}"
+                                        >
+                                            <viz.data:dimensions>
+                                                <viz.data:DimensionDefinition
+                                                    id="_IDGenDimensiofffffffffffnDqwqwwqwqefinition1"
+                                                    name="Category"
+                                                    value="{IceCreamModel>Category}"
+                                                />
+                                            </viz.data:dimensions>
+                                            <viz.data:measures>
+                                                <viz.data:MeasureDefinition
+                                                    id="_IDGenMeasureDefifffffffffwqqqfffffnition1"
+                                                    name="Percentage"
+                                                    value="{IceCreamModel>Percentage}"
+                                                />
+                                            </viz.data:measures>
+                                        </viz.data:FlattenedDataset>
+                                    </viz:dataset>
+
+                                    <viz:feeds>
+                                        <viz.feeds:FeedItem
+                                            id="_IDGenFffffffffffeeqwqdItem1"
+                                            uid="size"
+                                            type="Measure"
+                                            values="Percentage"
+                                        />
+                                        <viz.feeds:FeedItem
+                                            id="_IDGenFeedIwffffffffqwqwdwtem2"
+                                            uid="color"
+                                            type="Dimension"
+                                            values="Category"
+                                        />
+                                    </viz:feeds>
+                                </viz:VizFrame>
+                            </chart:content>
+                        </chart:ChartContainerContent>
+                    </chart:ChartContainer>
+                            <chart:ChartContainer id="chartContaeeee32eeeiner">
+                        <chart:ChartContainerContent
+                            id="_IDGenChartContainerCeeeeeee333ontent1"
+                        >
+                            <chart:content>
+                                <viz:VizFrame
+                                    id="idpieceeeeehart3"
+                                    width="auto"
+                                    uiConfig="{applicationSet:'fiori'}"
+                                    vizType="pie"
+                                    vizProperties="{
+                    plotArea:{
+                        dataLabel:{visible: true},
+                         formatString: [['0.00%']] 
+                    },
+                    title : {text:'OJR Quotation'}
+                }"
+                                >
+                                    <viz:dataset>
+                                        <viz.data:FlattenedDataset
+                                            id="flatteneeeeeeeeeeeeeData"
+                                            data="{IceCreamModel>/Items}"
+                                        >
+                                            <viz.data:dimensions>
+                                                <viz.data:DimensionDefinition
+                                                    id="_IDGenDimensiofffffffffffnDefinition1"
+                                                    name="Category"
+                                                    value="{IceCreamModel>Category}"
+                                                />
+                                            </viz.data:dimensions>
+                                            <viz.data:measures>
+                                                <viz.data:MeasureDefinition
+                                                    id="_IDGenMeasureDefiffffffffffffffnition1"
+                                                    name="Percentage"
+                                                    value="{IceCreamModel>Percentage}"
+                                                />
+                                            </viz.data:measures>
+                                        </viz.data:FlattenedDataset>
+                                    </viz:dataset>
+
+                                    <viz:feeds>
+                                        <viz.feeds:FeedItem
+                                            id="_IDGenFffffffffffeedItem1"
+                                            uid="size"
+                                            type="Measure"
+                                            values="Percentage"
+                                        />
+                                        <viz.feeds:FeedItem
+                                            id="_IDGenFeedIwffffffffdwtem2"
+                                            uid="color"
+                                            type="Dimension"
+                                            values="Category"
+                                        />
+                                    </viz:feeds>
+                                </viz:VizFrame>
+                            </chart:content>
+                        </chart:ChartContainerContent>
+                    </chart:ChartContainer>
+                            <chart:ChartContainer id="chartContaeeeeeeeiner">
+                        <chart:ChartContainerContent
+                            id="_IDGenChartContainerCeeeeeeeontent1"
+                        >
+                            <chart:content>
+                                <viz:VizFrame
+                                    id="idpieceeeeehart4"
+                                    width="auto"
+                                    uiConfig="{applicationSet:'fiori'}"
+                                    vizType="pie"
+                                    vizProperties="{
+                    plotArea:{
+                        dataLabel:{visible: true},
+                         formatString: [['0.00%']] 
+                    },
+                    title : {text:'P Quotation '}
+                }"
+                                >
+                                    <viz:dataset>
+                                        <viz.data:FlattenedDataset
+                                            id="ascxbsaibcosac"
+                                            data="{IceCreamModel>/Items}"
+                                        >
+                                            <viz.data:dimensions>
+                                                <viz.data:DimensionDefinition
+                                                    id="acxsiucsaobis"
+                                                    name="Category"
+                                                    value="{IceCreamModel>Category}"
+                                                />
+                                            </viz.data:dimensions>
+                                            <viz.data:measures>
+                                                <viz.data:MeasureDefinition
+                                                    id="ashsaioxcsa"
+                                                    name="Percentage"
+                                                    value="{IceCreamModel>Percentage}"
+                                                />
+                                            </viz.data:measures>
+                                        </viz.data:FlattenedDataset>
+                                    </viz:dataset>
+
+                                    <viz:feeds>
+                                        <viz.feeds:FeedItem
+                                            id="uvacvsa"
+                                            uid="size"
+                                            type="Measure"
+                                            values="Percentage"
+                                        />
+                                        <viz.feeds:FeedItem
+                                            id="asasbisacas"
+                                            uid="color"
+                                            type="Dimension"
+                                            values="Category"
+                                        />
+                                    </viz:feeds>
+                                </viz:VizFrame>
+                            </chart:content>
+                        </chart:ChartContainerContent>
+                    </chart:ChartContainer>
+        </FlexBox>
+        <Table id="_IDGenTable" >
+        <columns>
+        <Column id="_IDGenColumn1" hAlign="Center" >
+        <Title id="_IDGenTitle"  text="Column1" ></Title>
+        </Column>
+        <Column id="_IDGenColumn2" hAlign="Center" >
+        <Title id="_IDGenTitle1"  text="Column2" ></Title>
+        </Column>
+         <Column id="_IDGenColumn3" hAlign="Center" >
+        <Title id="_IDGenTitle2"  text="Column3" ></Title>
+        </Column>
+        <Column id="_IDGenColumn4" hAlign="Center" >
+        <Title id="_IDGenTitle3"  text="Column4" ></Title>
+        </Column>
+       <Column id="_IDGenColumn5" hAlign="Center" >
+        <Title id="_IDGenTitle4"  text="Column5" ></Title>
+        </Column>
+        </columns>
+        <items>
+        <ColumnListItem id="_IDGenColumnListItem" ></ColumnListItem>
+        </items>
+        </Table>
+         </Panel>
+
     </Page>
 </mvc:View>
