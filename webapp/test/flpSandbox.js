@@ -39,8 +39,8 @@ sap.ui.define([
 							"tiles": [{
 								"tileType": "sap.ushell.ui.tile.StaticTile",
 								"properties": {
-									"title": "DashBoard",
-									"targetURL": "#dashboard-display"
+									"title": "progress_pad",
+									"targetURL": "#progress_pad-display"
 								}
 							}]
 						}]
@@ -51,18 +51,18 @@ sap.ui.define([
 				"adapter": {
 					"config": {
 						"inbounds": {
-							"dashboard-display": {
-								"semanticObject": "dashboard",
+							"progress_pad-display": {
+								"semanticObject": "progress_pad",
 								"action": "display",
 								"description": "An SAP Fiori application.",
-								"title": "DashBoard",
+								"title": "progress_pad",
 								"signature": {
 									"parameters": {}
 								},
 								"resolutionResult": {
 									"applicationType": "SAPUI5",
-									"additionalInformation": "SAPUI5.Component=dashboard",
-									"url": sap.ui.require.toUrl("dashboard")
+									"additionalInformation": "SAPUI5.Component=progress_pad",
+									"url": sap.ui.require.toUrl("progress_pad")
 								}
 							}
 						}

@@ -5,12 +5,12 @@
 sap.ui.define([
         "sap/ui/core/UIComponent",
         "sap/ui/Device",
-        "dashboard/model/models"
+        "progress_pad/model/models"
     ],
     function (UIComponent, Device, models) {
         "use strict";
 
-        return UIComponent.extend("dashboard.Component", {
+        return UIComponent.extend("progress_pad.Component", {
             metadata: {
                 manifest: "json"
             },

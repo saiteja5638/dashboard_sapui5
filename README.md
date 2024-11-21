@@ -8,8 +8,8 @@
 |**Template Used**<br>simple|
 |**Service Type**<br>SAP System (ABAP On Premise)|
 |**Service URL**<br>https://12fabaf7trial-dev-websockects-srv.cfapps.us10-001.hana.ondemand.com/v2/catalog|
-|**Module Name**<br>dashboard|
-|**Application Title**<br>DashBoard|
+|**Module Name**<br>progress_pad|
+|**Application Title**<br>progress_pad|
 |**Namespace**<br>|
 |**UI5 Theme**<br>sap_horizon|
 |**UI5 Version**<br>1.130.0|
@@ -17,7 +17,7 @@
 |**Enable TypeScript**<br>False|
 |**Add Eslint configuration**<br>False|
 
-## dashboard
+## progress_pad
 
 An SAP Fiori application.
 

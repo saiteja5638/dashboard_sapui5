@@ -1,5 +1,5 @@
 <mvc:View
-    controllerName="dashboard.controller.View1"
+    controllerName="progress_pad.controller.View1"
     xmlns:mvc="sap.ui.core.mvc"
     displayBlock="true"
         xmlns:viz="sap.viz.ui5.controls"
@@ -15,7 +15,7 @@
         showHeader="false"
     >
         <Panel id="_IDGenPanel1"
-            headerText="DashBoard Quotation"
+            headerText="progress_pad Quotation"
            
             height="300px"
         >

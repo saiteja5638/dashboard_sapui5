@@ -4,7 +4,7 @@ sap.ui.define([
 function (Controller) {
     "use strict";
 
-    return Controller.extend("dashboard.controller.View1", {
+    return Controller.extend("progress_pad.controller.View1", {
         onInit: function () {
             var oData = {
                 Items: [

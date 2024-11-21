@@ -5,7 +5,7 @@ sap.ui.define(
     function(BaseController) {
       "use strict";
   
-      return BaseController.extend("dashboard.controller.App", {
+      return BaseController.extend("progress_pad.controller.App", {
         onInit: function() {
         }
       });

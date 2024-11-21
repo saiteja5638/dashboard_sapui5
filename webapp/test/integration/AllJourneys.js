@@ -7,7 +7,7 @@ sap.ui.define([
 
 	Opa5.extendConfig({
 		arrangements: new Startup(),
-		viewNamespace: "dashboard.view.",
+		viewNamespace: "progress_pad.view.",
 		autoWait: true
 	});
 });

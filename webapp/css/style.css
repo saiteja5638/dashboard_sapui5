@@ -1,9 +1,9 @@
-div#container-dashboard---View1--_IDGenFlexBox {
+div#container-progress_pad---View1--_IDGenFlexBox {
     display: flex;
     justify-content: space-between;
     /* padding: 80px; */
 }
-div#container-dashboard---View1--_IDGenVBox {
+div#container-progress_pad---View1--_IDGenVBox {
     display: flex;
     justify-content: space-evenly;
     /* flex-wrap: wrap; */
@@ -11,46 +11,46 @@ div#container-dashboard---View1--_IDGenVBox {
     height: 300px;
 }
 
-div#container-dashboard---View1--idpiechart {
+div#container-progress_pad---View1--idpiechart {
     width: 400px !important;
     height: 300px !important;
 }
 .sapSuiteUiCommonsChartContainerToolBarArea {
     display: none;
 }
-div#container-dashboard---View1--_IDGedwnVBox1 {
+div#container-progress_pad---View1--_IDGedwnVBox1 {
     position: relative;
     /* left: -100px; */
     right: 50px;
 }
-div#container-dashboard---View1--_IDGenPanel1 {
+div#container-progress_pad---View1--_IDGenPanel1 {
     height: 420px !important;
 }
-div#container-dashboard---View1--_IDGenPanel1 {
+div#container-progress_pad---View1--_IDGenPanel1 {
     padding: 10px;
 }
 
-div#container-dashboard---View1--_IDGenPanel2 {
+div#container-progress_pad---View1--_IDGenPanel2 {
     padding: 10px;
 }
 
-div#container-dashboard---View1--idpieceeeeehart {
+div#container-progress_pad---View1--idpieceeeeehart {
     width: 400px !important;
     height: 300px !important;
 }
-div#container-dashboard---View1--idpieceeeeehart4 {
+div#container-progress_pad---View1--idpieceeeeehart4 {
     width: 400px !important;
     height: 300px !important;
 }
-div#container-dashboard---View1--idpieceeeeehart3 {
+div#container-progress_pad---View1--idpieceeeeehart3 {
     width: 400px !important;
     height: 300px !important;
 }
-div#container-dashboard---View1--idpieceeeeehart1 {
+div#container-progress_pad---View1--idpieceeeeehart1 {
     width: 400px !important;
     height: 300px !important;
 }
-div#container-dashboard---View1--_IDGenPanel2-content {
+div#container-progress_pad---View1--_IDGenPanel2-content {
     display: flex;
     justify-content: center;
     align-items: center;

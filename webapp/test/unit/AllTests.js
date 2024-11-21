@@ -1,5 +1,5 @@
 sap.ui.define([
-	"dashboard/test/unit/controller/View1.controller"
+	"progress_pad/test/unit/controller/View1.controller"
 ], function () {
 	"use strict";
 });

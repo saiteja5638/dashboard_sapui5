@@ -5,7 +5,7 @@ sap.ui.getCore().attachInit(function () {
 	"use strict";
 
 	sap.ui.require([
-		"dashboard/test/unit/AllTests"
+		"progress_pad/test/unit/AllTests"
 	], function () {
 		QUnit.start();
 	});

@@ -1,7 +1,7 @@
 /*global QUnit*/
 
 sap.ui.define([
-	"dashboard/controller/View1.controller"
+	"progress_pad/controller/View1.controller"
 ], function (Controller) {
 	"use strict";
 

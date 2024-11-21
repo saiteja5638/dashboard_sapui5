@@ -1,5 +1,5 @@
 {
-  "xsappname": "dashboard",
+  "xsappname": "progress_pad",
   "tenant-mode": "dedicated",
   "description": "Security profile of called application",
   "scopes": [],
